@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <h2>Cadastro de usuário</h2>
+        </div>
+        <div class="container">
+            <div class="formulario">
+                <form id="form">
+                    <div class=" input-group-sm mb-5">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="not-null form-control border-bottom mb-2" size="90" placeholder="Nome"
+                            id="nome" name="nome">
+                        <label for="email">Email</label>
+                        <input type="email" class="not-null  form-control border-bottom  mb-2" placeholder="E-mail"
+                            id="email" name="email">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="not-null  form-control border-bottom  mb-2" placeholder="CPF" id="cpf"
+                            name="cpf">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="not-null  form-control  border-bottom mb-2" placeholder="CEP" id="cep"
+                            name="cep">
+                        <label for="rua">Rua</label>
+                        <input type="text" class=" form-control  border-bottom mb-2" readonly='readonly'
+                            placeholder="Rua" id="rua" name="rua">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control border-bottom  mb-2" readonly='readonly'
+                            placeholder="Bairro" id="bairro" name="bairro">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control  border-bottom mb-2" readonly='readonly'
+                            placeholder="Cidade" id="cidade" name="cidade">
+                        <label for="uf">UF</label>
+                        <input type="text" class="form-control border-bottom " readonly='readonly' placeholder="UF"
+                            id="uf" name="uf">
+                        <button class="btn btn-primary mt-3">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mensagem" id="mensagem"></div>
+        </div>
+    </div>
+
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
